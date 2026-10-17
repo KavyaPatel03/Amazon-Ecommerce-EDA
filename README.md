@@ -1,5 +1,4 @@
 # Amazon-Ecommerce-EDA
-# Amazon-Ecommerce-Analysis
 As a part of an E-Commerce Retail Marketplace, which specialises in selling a wide variety of consumer and wholesale products across multiple countries, we need to identify the operational and behavioral patterns that influence order value, customer spend, and purchasing cycles. When managing an online marketplace, platforms face critical decision-making challenges around inventory allocation, pricing, and campaign scheduling. This decisioning is associated with two key risks:
 
 a. If customer demand peaks at specific hours or within certain countries and the platform fails to target or stock inventory accordingly, it results in missed revenue and lost market share;  
@@ -32,10 +31,9 @@ The primary objective of this exercise is to assist the e-commerce business in o
 
 # Steps to do the EDA
 - **Analyze the meaning of data and perform feature engineering (extracting `hour`, `day_name`, and calculating `amount_spent = quantity * unit_price`)**
-- **Clean the data according to the need (handling missing values, cancellations, and irregular records)**
-- **Handle extreme outliers statistically (applying 99th-percentile cutoffs on spend and setting bounded heatmap color scales like `vmin`/`vmax`)**
-- **Do the EDA by answering business questions around temporal purchasing patterns and international sales distributions**
-- **Visualize the results into graphs and charts (boxenplots and pivot heatmaps) using matplotlib and seaborn**
+- **Clean the data according to the need (handling missing values, cancellations, and irregular records) and handle extreme outliers statistically**
+- **Do the EDA by answering business questions**
+- **Visualize the results into graphs and charts using matplotlib and seaborn**
 
 # Key Findings of the EDA
 - **Early-Morning Surge:** A sharp escalation in average order values occurs at 7:00 AM from Wednesday through Friday, indicating recurring commercial or bulk replenishment orders.
@@ -44,7 +42,7 @@ The primary objective of this exercise is to assist the e-commerce business in o
 - **High-Ticket Outlier Influence:** Extreme order amounts heavily skew linear distributions and color scales unless properly normalized using percentile limits.
 
 # Limitation of the EDA
-- **Limited to single-metric aggregations (mean spend) without full multivariate predictive modeling or customer-level RFM segmentation**
+- **Limited to single-metric aggregations**
 
 # Author
 Kavya Patel
